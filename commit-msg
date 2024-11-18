@@ -1,0 +1,8 @@
+#!/bin/sh
+
+cd ./scripts || exit
+
+javac CommitMsgHook.java
+
+#!/bin/bash
+java -cp . CommitMsgHook "$@"
